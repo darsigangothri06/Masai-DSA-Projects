@@ -39,9 +39,6 @@ def show_leaderboard():
     for idx, entry in enumerate(leaderboard, start=1):
         print(f"{idx}. {entry['username']} - {entry['wpm']} WPM (Category: {entry['category']})")
 
-    clear = lambda: os.system('cls')
-    clear()
-
 # Run the test
 def run_typing_test(player_name, chosen_category, num_words):
     words_data = load_words_from_json(WORD_CATEGORIES_FILE)[chosen_category]
