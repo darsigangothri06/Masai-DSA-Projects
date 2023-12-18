@@ -47,7 +47,7 @@ def suggest_corrections(word, trie, threshold=0.15):
 
     return set(suggestions)
 
-def main():
+def main():#gangothri
     trie = Trie()
 
     with open("dictionary.txt", "r") as file:
